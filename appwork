@@ -1,0 +1,33 @@
+User (Frontend)
+    │
+    ▼
+HTML/CSS/JS UI
+    │  Sends requests (Fetch API)
+    ▼
+Backend Server (Node.js + Express)
+    │
+    │  Handles API routes:
+    │    GET /products       → fetch all products
+    │    GET /suppliers      → fetch all suppliers
+    │    POST /purchaseorders → create new purchase order
+    │    POST /products/:id/receive → update stock
+    ▼
+SQL Server Database
+    │
+    │  Tables:
+    │    Suppliers
+    │    Products
+    │    PurchaseOrders
+    │    OrderDetails
+    │
+    │  Stored Procedures:
+    │    sp_CreatePurchaseOrder
+    │    sp_UpdateStock
+    │
+    │  Trigger:
+    │    trg_AutoReorder → auto creates order if stock < reorder level
+    ▼
+Database updates / responses
+    │
+    ▼
+Frontend UI updates in real-time
