@@ -1,0 +1,43 @@
+1. Backend
+````
+Node.js → Server-side JavaScript runtime
+Express.js → Framework to build REST API
+mssql → Node package to connect to SQL Server
+CORS → Middleware to allow frontend-backend communication
+````
+
+2. Database
+````
+SQL Server → Relational database
+Tables: Suppliers, Products, PurchaseOrders, OrderDetails
+Stored Procedures: sp_CreatePurchaseOrder, sp_UpdateStock
+Triggers: trg_AutoReorder → auto-create orders when stock is low
+Sample Data: schema.sql & sample_data.sql
+````
+
+3. Frontend
+````
+HTML / CSS / JavaScript → Simple, interactive UI
+Fetch API → To call backend REST endpoints
+Dynamic Table Updates → Highlight low stock products
+````
+
+4. Tools & Environment
+````
+Visual Studio Code → Code editor
+SQL Server Management Studio (SSMS) → For database setup
+Node Package Manager (npm) → Manage backend dependencies
+Git & GitHub → Version control & project hosting
+GitHub Pages → Optional: host frontend live
+````
+
+5. Key Concepts Demonstrated
+````
+Full-stack development workflow
+Database design & normalization
+CRUD operations via REST API
+Auto-triggered business logic using SQL triggers
+Environment configuration (.env for DB credentials)
+Separation of frontend and backend
+````
+Project organization & GitHub portfolio deployment
